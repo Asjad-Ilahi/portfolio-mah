@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahnoor Tahir | Software Engineer & QA Specialist</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- GSAP & Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="grain-overlay"></div>
+    <div class="global-grid"></div>
+    <div class="orb-container">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="#hero" class="logo">Mahnoor <span>Tahir</span></a>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="mailto:mahnoorcui21@gmail.com" class="btn btn-ghost">Contact</a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div class="hero-grid-background"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-tag">Digital Craftsmanship · Engineering · QA</span>
+                <h1 class="hero-title">
+                    Building things<br>
+                    <em>that work.</em>
+                </h1>
+                <div class="hero-footer">
+                    <p class="hero-desc">
+                        Motivated software engineering student at COMSATS Islamabad — crafting high-quality, reliable,
+                        and efficient software solutions.
+                    </p>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image-card">
+                    <img src="img/cute.jpg" alt="Mahnoor Tahir" class="hero-avatar">
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="section-title">Who I <em>am</em></div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p class="lead">Motivated software engineering student with strong foundations in software development,
+                    quality assurance, and problem-solving.</p>
+                <p>I am passionate about building efficient, reliable, and high-quality software solutions. My skillset
+                    spans programming, system design, and software testing, and I am currently seeking a software
+                    engineering or quality assurance position to apply my technical knowledge and contribute to
+                    real-world projects.</p>
+                <div class="about-buttons">
+                    <a href="https://www.linkedin.com/in/mahnoortahir21" target="_blank" class="btn btn-primary"><i
+                            data-lucide="linkedin"></i> View LinkedIn</a>
+                    <a href="https://github.com/mahnoor-21" target="_blank" class="btn btn-ghost"><i
+                            data-lucide="github"></i> GitHub Profile</a>
+                </div>
+            </div>
+            <div class="about-sidebar">
+                <div class="contact-card">
+                    <span class="section-tag">Status</span>
+                    <div class="detail-item">
+                        <span class="value accent">Actively seeking roles in Engineering & QA</span>
+                    </div>
+                    <hr style="opacity: 0.1; margin: 20px 0;">
+                    <span class="section-tag">Based In</span>
+                    <div class="detail-item">
+                        <span class="value">Islamabad, Pakistan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <div class="section-title">Educational <em>Path</em></div>
+        <div class="card-grid">
+            <div class="timeline-item">
+                <div class="timeline-date">March 2026 - Present</div>
+                <div class="timeline-content">
+                    <span class="section-tag">Bachelors</span>
+                    <h3>Software Engineering</h3>
+                    <span class="institution">COMSATS UNIVERSITY ISLAMABAD</span>
+                    <p>Current CGPA: <span class="grade">3.59</span></p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Aug 2019 - Aug 2021</div>
+                <div class="timeline-content">
+                    <span class="section-tag">Intermediate</span>
+                    <h3>Pre-Engineering</h3>
+                    <span class="institution">ISLAMABAD COLLEGE FOR GIRLS F-6/2</span>
+                    <p>Score: <span class="grade">98%</span></p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Aug 2017 - Aug 2019</div>
+                <div class="timeline-content">
+                    <span class="section-tag">Matric</span>
+                    <h3>Science</h3>
+                    <span class="institution">ISLAMABAD COLLEGE FOR GIRLS F-6/2</span>
+                    <p>Score: <span class="grade">92.36%</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="section-title">Core <em>Arsenal</em></div>
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-icon"><i data-lucide="code-2"></i></div>
+                <h3 class="card-title">Languages</h3>
+                <div class="card-tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i data-lucide="monitor"></i></div>
+                <h3 class="card-title">Web Dev</h3>
+                <div class="card-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">MERN Stack</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i data-lucide="search-check"></i></div>
+                <h3 class="card-title">QA & Testing</h3>
+                <div class="card-tags">
+                    <span class="tag">Manual Testing</span>
+                    <span class="tag">Selenium</span>
+                    <span class="tag">Cypress</span>
+                    <span class="tag">JUnit</span>
+                    <span class="tag">Bug Tracking</span>
+                    <span class="tag">SDLC/STLC</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i data-lucide="database"></i></div>
+                <h3 class="card-title">Databases</h3>
+                <div class="card-tags">
+                    <span class="tag">MySQL</span>
+                    <span class="tag">MongoDB</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i data-lucide="cpu"></i></div>
+                <h3 class="card-title">Core CS</h3>
+                <div class="card-tags">
+                    <span class="tag">DSA</span>
+                    <span class="tag">OOP</span>
+                    <span class="tag">Problem Solving</span>
+                    <span class="tag">System Design</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i data-lucide="terminal"></i></div>
+                <h3 class="card-title">Tools & DevOps</h3>
+                <div class="card-tags">
+                    <span class="tag">Git & GitHub</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Jenkins</span>
+                    <span class="tag">CI/CD</span>
+                    <span class="tag">VS Code</span>
+                    <span class="tag">IntelliJ</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i data-lucide="palette"></i></div>
+                <h3 class="card-title">Design</h3>
+                <div class="card-tags">
+                    <span class="tag">Figma</span>
+                    <span class="tag">WordPress</span>
+                    <span class="tag">Canva</span>
+                    <span class="tag">CapCut</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <div class="section-title">Professional <em>Experience</em></div>
+        <div class="card-grid">
+            <div class="timeline-item">
+                <div class="timeline-date">July 2024 - Aug 2024</div>
+                <div class="timeline-content">
+                    <span class="section-tag">Internship</span>
+                    <h3>Frontend Developer & UI/UX Intern</h3>
+                    <span class="institution">InternCraft</span>
+                    <ul class="bullet-list">
+                        <li>Designed UI/UX in Figma with focus on usability and consistency</li>
+                        <li>Built responsive interfaces using HTML, CSS, and JavaScript/React</li>
+                        <li>Collaborated on implementing designs and improving UI performance</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Present</div>
+                <div class="timeline-content">
+                    <span class="section-tag">Independent</span>
+                    <h3>Documentation & Freelancing</h3>
+                    <span class="institution">IT Services</span>
+                    <ul class="bullet-list">
+                        <li>Created technical documentation and project reports</li>
+                        <li>Assisted in UI planning and system structuring</li>
+                        <li>Improved communication and client handling skills</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="section-title">Selected <em>Works</em></div>
+        <div class="card-grid">
+            <div class="card project-card featured">
+                <span class="section-tag">Final Year Project</span>
+                <h3 class="card-title">Dukano — AI Store Builder</h3>
+                <p>An AI-powered platform for creating and managing online stores with enhanced features beyond Shopify.
+                    Including intelligent store setup and automated product management.</p>
+                <div class="card-tags">
+                    <span class="tag">Full-Stack</span>
+                    <span class="tag">AI Integration</span>
+                    <span class="tag">E-commerce</span>
+                </div>
+                <div style="margin-top: 30px;">
+                    <a href="https://github.com/mahnoor-21" target="_blank" class="btn btn-primary">Check on GitHub</a>
+                </div>
+            </div>
+            <div class="card project-card">
+                <h3 class="card-title">FlexiHub</h3>
+                <p>A minimalist full-stack platform using React and Node.js to address common freelancing challenges.
+                    Features job tracking and communication tools.</p>
+                <div class="card-tags">
+                    <span class="tag">MERN</span>
+                    <span class="tag">Freelancing</span>
+                </div>
+                <div style="margin-top: 20px;">
+                    <a href="https://github.com/mahnoor-21" target="_blank" class="btn btn-ghost">Source Code</a>
+                </div>
+            </div>
+            <div class="card project-card">
+                <h3 class="card-title">Sports League Scheduler</h3>
+                <p>Match scheduling system using BFS, DFS, A*, CSP, and Genetic Algorithms to ensure fair, conflict-free
+                    league scheduling.</p>
+                <div class="card-tags">
+                    <span class="tag">AI Algorithms</span>
+                    <span class="tag">Python</span>
+                </div>
+                <div style="margin-top: 20px;">
+                    <a href="https://github.com/mahnoor-21" target="_blank" class="btn btn-ghost">Source Code</a>
+                </div>
+            </div>
+            <div class="card project-card">
+                <h3 class="card-title">Mentrapy</h3>
+                <p>Desktop-based mental therapy platform with secure user authentication, file-based storage, and
+                    intuitive GUI for consultants.</p>
+                <div class="card-tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Desktop App</span>
+                </div>
+                <div style="margin-top: 20px;">
+                    <a href="https://github.com/mahnoor-21" target="_blank" class="btn btn-ghost">Source Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="contact-header">
+            <span class="hero-tag">Available for new opportunities</span>
+            <h2 class="contact-title">Let's talk<br><em>business.</em></h2>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <div class="label"><i data-lucide="mail"></i> Email</div>
+                <a href="mailto:mahnoorcui21@gmail.com" class="value">mahnoorcui21@gmail.com</a>
+                <a href="mailto:mahnoorcui21@gmail.com" class="btn btn-ghost"
+                    style="margin-top: 10px; width: fit-content;">Send Message</a>
+            </div>
+
+            <div class="contact-item">
+                <div class="label"><i data-lucide="linkedin"></i> LinkedIn</div>
+                <a href="https://www.linkedin.com/in/mahnoortahir21" target="_blank" class="value">mahnoortahir21</a>
+                <a href="https://www.linkedin.com/in/mahnoortahir21" target="_blank" class="btn btn-primary"
+                    style="margin-top: 10px; width: fit-content;">Connect</a>
+            </div>
+            <div class="contact-item">
+                <div class="label"><i data-lucide="github"></i> GitHub</div>
+                <a href="https://github.com/mahnoor-21" target="_blank" class="value">mahnoor-21</a>
+                <a href="https://github.com/mahnoor-21" target="_blank" class="btn btn-ghost"
+                    style="margin-top: 10px; width: fit-content;">Follow</a>
+            </div>
+            <div class="contact-item">
+                <div class="label"><i data-lucide="map-pin"></i> Location</div>
+                <span class="value">Islamabad, Pakistan</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content"
+            style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <p>© 2026 Mahnoor Tahir. All rights reserved.</p>
+            <div class="footer-links" style="display: flex; gap: 20px;">
+                <a href="#hero" style="color: var(--text-dim); text-decoration: none;">Back to Top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
